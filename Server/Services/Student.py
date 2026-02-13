@@ -3,7 +3,6 @@ from Logging.Breadcrumb import Breadcrumb
 from config import DEBUG
 from constants import *
 
-CHECK_IN_COL = "check_in_time"
 
 class Student:
     def __init__(self):
@@ -14,5 +13,5 @@ class Student:
             Breadcrumb.throw_crumb(GETTING_STUDENTS_DATA)
         response = self.student_data_access.get_students()
         for student in response:
-            student[CHECK_IN_COL] = str(student.get(CHECK_IN_COL))
+            student[CHECK_IN_COL] = str(student.get(CHECK_IN_COL)) + UTC
         return response

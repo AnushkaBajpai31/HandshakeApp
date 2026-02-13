@@ -25,3 +25,6 @@ GET_STUDENT_FAILED = "Get student data failed"
 DELETE_STUDENT_FAILED = "Delete student data failed"
 
 GETTING_STUDENTS_DATA = "Getting students data"
+
+CHECK_IN_COL = "check_in_time"
+UTC =  " UTC"
